@@ -1,0 +1,19 @@
+<story path="com/hib/jpa/sample_story.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">create a sample story test</inOrderTo>
+  <asA keyword="As a">student</asA>
+  <iWantTo keyword="I want to">buy a car</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Student buying a car">
+<step outcome="successful">Given a car of make <parameter>eqwe</parameter></step>
+<step outcome="pending" keyword="PENDING">And the make exists</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When student adds the car to his collection</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then student owns the car</step>
+<pendingMethod>@Given(&quot;the make exists&quot;)
+@Pending
+public void givenTheMakeExists() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+</story>

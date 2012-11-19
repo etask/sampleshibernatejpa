@@ -2,6 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.samples.spring</groupId>
 	<artifactId>spring-jpa-utility</artifactId>
@@ -154,39 +155,15 @@
 				</configuration>
 			</plugin>
 
-			<!-- <plugin>
-				<groupId>org.jbehave</groupId>
-				<artifactId>jbehave-maven-plugin</artifactId>
-				<version>3.7</version>
-				<executions>
-					<execution>
-						<id>embeddable-stories</id>
-						<phase>integration-test</phase>
-						<configuration>
-							<includes>
-								<include>${embeddables}</include>
-							</includes>
-							<excludes />
-							<ignoreFailureInStories>true</ignoreFailureInStories>
-							<ignoreFailureInView>false</ignoreFailureInView>
-							<threads>1</threads>
-							<metaFilters>
-								<metaFilter></metaFilter>
-							</metaFilters>
-						</configuration>
-						<goals>
-							<goal>run-stories-as-embeddables</goal>
-						</goals>
-					</execution>
-				</executions>
-				<dependencies>
-					<dependency>
-						<groupId>log4j</groupId>
-						<artifactId>log4j</artifactId>
-						<version>1.2.16</version>
-					</dependency>
-				</dependencies>
-			</plugin> -->
+			<!-- <plugin> <groupId>org.jbehave</groupId> <artifactId>jbehave-maven-plugin</artifactId> 
+				<version>3.7</version> <executions> <execution> <id>embeddable-stories</id> 
+				<phase>integration-test</phase> <configuration> <includes> <include>${embeddables}</include> 
+				</includes> <excludes /> <ignoreFailureInStories>true</ignoreFailureInStories> 
+				<ignoreFailureInView>false</ignoreFailureInView> <threads>1</threads> <metaFilters> 
+				<metaFilter></metaFilter> </metaFilters> </configuration> <goals> <goal>run-stories-as-embeddables</goal> 
+				</goals> </execution> </executions> <dependencies> <dependency> <groupId>log4j</groupId> 
+				<artifactId>log4j</artifactId> <version>1.2.16</version> </dependency> </dependencies> 
+				</plugin> -->
 
 		</plugins>
 	</build>

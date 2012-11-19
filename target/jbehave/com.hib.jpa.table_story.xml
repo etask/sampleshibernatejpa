@@ -1,0 +1,36 @@
+<story path="com/hib/jpa/table_story.story" title="">
+<scenario keyword="Scenario:" title="eqweqweqwqe">
+<examples keyword="Examples:">
+<step>Given m_ids and messages exist</step>
+<step>When you select &lt;m_id&gt;</step>
+<step>Then you get &lt;message&gt;</step>
+<parameters>
+<names><name>id</name><name>message</name></names>
+<values><value>1</value><value>message 1</value></values>
+<values><value>2</value><value>message 2</value></values>
+<values><value>3</value><value>message 3</value></values>
+<values><value>4</value><value>message 5</value></values>
+</parameters>
+
+<example keyword="Example:">{id=1, message=message 1}</example>
+<step outcome="successful">Given m_ids and messages exist</step>
+<step outcome="successful">When you select &lt;m_id&gt;</step>
+<step outcome="successful">Then you get <parameter>message 1</parameter></step>
+
+<example keyword="Example:">{id=2, message=message 2}</example>
+<step outcome="successful">Given m_ids and messages exist</step>
+<step outcome="successful">When you select &lt;m_id&gt;</step>
+<step outcome="successful">Then you get <parameter>message 2</parameter></step>
+
+<example keyword="Example:">{id=3, message=message 3}</example>
+<step outcome="successful">Given m_ids and messages exist</step>
+<step outcome="successful">When you select &lt;m_id&gt;</step>
+<step outcome="successful">Then you get <parameter>message 3</parameter></step>
+
+<example keyword="Example:">{id=4, message=message 5}</example>
+<step outcome="successful">Given m_ids and messages exist</step>
+<step outcome="successful">When you select &lt;m_id&gt;</step>
+<step outcome="failed" keyword="FAILED">Then you get <parameter>message 5</parameter><failure>junit.framework.ComparisonFailure: null expected:&lt;message [5]&gt; but was:&lt;message [4]&gt;</failure></step>
+</examples>
+</scenario>
+</story>

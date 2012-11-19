@@ -5,13 +5,31 @@ In order to create a sample story test
 As a student
 I want to buy a car
 Scenario: Student buying a car
-Given a car of make eqwe
+Given a car of make eqwe (PENDING)
 And the make exists (PENDING)
-When student adds the car to his collection (NOT PERFORMED)
-Then student owns the car (NOT PERFORMED)
+When student adds the car to his collection (PENDING)
+Then student owns the car (PENDING)
+@Given("a car of make eqwe")
+@Pending
+public void givenACarOfMakeEqwe() {
+  // PENDING
+}
+
 @Given("the make exists")
 @Pending
 public void givenTheMakeExists() {
+  // PENDING
+}
+
+@When("student adds the car to his collection")
+@Pending
+public void whenStudentAddsTheCarToHisCollection() {
+  // PENDING
+}
+
+@Then("student owns the car")
+@Pending
+public void thenStudentOwnsTheCar() {
   // PENDING
 }
 

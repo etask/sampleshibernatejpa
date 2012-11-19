@@ -1,0 +1,49 @@
+<div class="story">
+<h1></h1>
+<div class="path">com/hib/jpa/table_story.story</div>
+<div class="scenario">
+<h2>Scenario: eqweqweqwqe</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given m_ids and messages exist</div>
+<div class="step">When you select &lt;m_id&gt;</div>
+<div class="step">Then you get &lt;message&gt;</div>
+<table>
+<thead>
+<tr>
+<th>id</th><th>message</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td><td>message 1</td></tr>
+<tr>
+<td>2</td><td>message 2</td></tr>
+<tr>
+<td>3</td><td>message 3</td></tr>
+<tr>
+<td>4</td><td>message 5</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {id=1, message=message 1}</h3>
+<div class="step successful">Given m_ids and messages exist</div>
+<div class="step successful">When you select &lt;m_id&gt;</div>
+<div class="step successful">Then you get <span class="step parameter">message 1</span></div>
+
+<h3 class="example">Example: {id=2, message=message 2}</h3>
+<div class="step successful">Given m_ids and messages exist</div>
+<div class="step successful">When you select &lt;m_id&gt;</div>
+<div class="step successful">Then you get <span class="step parameter">message 2</span></div>
+
+<h3 class="example">Example: {id=3, message=message 3}</h3>
+<div class="step successful">Given m_ids and messages exist</div>
+<div class="step successful">When you select &lt;m_id&gt;</div>
+<div class="step successful">Then you get <span class="step parameter">message 3</span></div>
+
+<h3 class="example">Example: {id=4, message=message 5}</h3>
+<div class="step successful">Given m_ids and messages exist</div>
+<div class="step successful">When you select &lt;m_id&gt;</div>
+<div class="step failed">Then you get <span class="step parameter">message 5</span> <span class="keyword failed">(FAILED)</span><br/><span class="message failed">junit.framework.ComparisonFailure: null expected:&lt;message [5]&gt; but was:&lt;message [4]&gt;</span></div>
+</div>
+</div>
+</div>

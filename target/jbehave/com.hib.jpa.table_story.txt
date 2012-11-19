@@ -1,0 +1,37 @@
+
+(com/hib/jpa/table_story.story)
+Scenario: eqweqweqwqe
+Examples:
+Given m_ids and messages exist
+When you select <m_id>
+Then you get <message>
+
+|id|message|
+|1|message 1|
+|2|message 2|
+|3|message 3|
+|4|message 5|
+
+Example: {id=1, message=message 1}
+Given m_ids and messages exist
+When you select <m_id>
+Then you get message 1
+
+Example: {id=2, message=message 2}
+Given m_ids and messages exist
+When you select <m_id>
+Then you get message 2
+
+Example: {id=3, message=message 3}
+Given m_ids and messages exist
+When you select <m_id>
+Then you get message 3
+
+Example: {id=4, message=message 5}
+Given m_ids and messages exist
+When you select <m_id>
+Then you get message 5 (FAILED)
+(junit.framework.ComparisonFailure: null expected:<message [5]> but was:<message [4]>)
+
+
+

@@ -15,13 +15,31 @@
   <iWantTo keyword="I want to">buy a car</iWantTo>
 </narrative>
 <scenario keyword="Scenario:" title="Student buying a car">
-<step outcome="successful">Given a car of make <parameter>eqwe</parameter></step>
+<step outcome="pending" keyword="PENDING">Given a car of make eqwe</step>
 <step outcome="pending" keyword="PENDING">And the make exists</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">When student adds the car to his collection</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">Then student owns the car</step>
+<step outcome="pending" keyword="PENDING">When student adds the car to his collection</step>
+<step outcome="pending" keyword="PENDING">Then student owns the car</step>
+<pendingMethod>@Given(&quot;a car of make eqwe&quot;)
+@Pending
+public void givenACarOfMakeEqwe() {
+  // PENDING
+}
+</pendingMethod>
 <pendingMethod>@Given(&quot;the make exists&quot;)
 @Pending
 public void givenTheMakeExists() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;student adds the car to his collection&quot;)
+@Pending
+public void whenStudentAddsTheCarToHisCollection() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;student owns the car&quot;)
+@Pending
+public void thenStudentOwnsTheCar() {
   // PENDING
 }
 </pendingMethod>
